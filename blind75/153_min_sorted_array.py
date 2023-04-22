@@ -16,7 +16,7 @@ class Solution:
     def findMin(self, nums) -> int:
         l, r = 0, len(nums) - 1
 
-        if nums[l] < nums[r]:
+        if nums[l] <= nums[r]:
             return nums[l]
 
         while l < r:
