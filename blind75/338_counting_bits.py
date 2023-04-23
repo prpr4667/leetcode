@@ -12,7 +12,6 @@
 
 class Solution:
     def countBits(self, n):
-        # sol = []
         return [self.countSetBits(i) for i in range(n + 1)]
 
     def countSetBits(self, n):
