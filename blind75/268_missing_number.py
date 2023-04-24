@@ -16,7 +16,12 @@ class Solution:
 
         return xor
 
+    def missingNumber_GF(self, nums):
+        n = len(nums)
+        sigma = (n * (n + 1)) // 2
+        return sigma - sum(nums)
+
 
 solution = Solution()
 nums = [3, 0, 1, 4, 2, 6]
-print(solution.missingNumber(nums))
+print(solution.missingNumber_GF(nums))
