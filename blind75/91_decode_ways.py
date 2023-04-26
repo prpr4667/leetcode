@@ -36,7 +36,7 @@ class Solution:
 
             if i + 1 < n and 10 <= int(s[i : i + 2]) <= 26:
                 dp[i] += dp[i + 2]
-        print(dp)
+        # print(dp)
         return dp[0]
 
 
